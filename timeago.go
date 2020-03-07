@@ -4,8 +4,8 @@ package timeago
 
 import (
 	"time"
-  "fmt"
-  "math"
+    "fmt"
+    "math"
 	"errors"
 )
 
@@ -107,45 +107,45 @@ func localizedStringFor(valueType DateAgoValues, value int) string {
     switch valueType {
         case YearsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d years ago", value);
+                return fmt.Sprintf("%d года назад", value);
             } else {
-                return "Last year";
+                return "В прошлом году";
             }
         case MonthsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d months ago", value);
+                return fmt.Sprintf("%d месяц назад", value);
             } else {
-                return "Last month";
+                return "В прошлом месяце";
             }
         case WeeksAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d weeks ago", value);
+                return fmt.Sprintf("%d недели назад", value);
             } else {
-                return "Last week";
+                return "На той неделе";
             }
         case DaysAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d days ago", value);
+                return fmt.Sprintf("%d дней назад", value);
             } else {
-                return "Yesterday";
+                return "Вчера";
             }
         case HoursAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d hours ago", value);
+                return fmt.Sprintf("%d часов назад", value);
             } else {
-                return "An hour ago";
+                return "Час назад";
             }
         case MinutesAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d minutes ago", value);
+                return fmt.Sprintf("%d минут назад", value);
             } else {
-                return "A minute ago";
+                return "Минуту назад";
             }
         case SecondsAgo:
             if value >= 2 {
-                return fmt.Sprintf("%d seconds ago", value);
+                return fmt.Sprintf("%d секунд назад", value);
             } else {
-                return "Just now";
+                return "Только что";
             }
     }
     return "";
